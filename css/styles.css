@@ -63,6 +63,15 @@ h1, h2, h3, .logo-texto {
 .logo {
   text-decoration: none;
   color: var(--amarillo-sol);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-texto {
