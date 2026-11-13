@@ -1,0 +1,540 @@
+/* VARIABLES DE IDENTIDAD (ROJO, AMARILLO Y NARANJA) */
+:root {
+  --rojo-murga: #d90429;
+  --rojo-oscuro: #9b001c;
+  --naranja-fuego: #f77f00;
+  --amarillo-sol: #fcbf49;
+  --fondo-oscuro: #16161a;
+  --fondo-gris-oscuro: #222228;
+  --fondo-claro: #f8f9fa;
+  --texto-oscuro: #1e1e24;
+  --texto-claro: #ffffff;
+  --texto-gris: #555555;
+  --borde-radio: 10px;
+  --sombra: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto-oscuro);
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, .logo-texto {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* HEADER Y NAVEGACIÓN */
+.header {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 4px solid var(--naranja-fuego);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--amarillo-sol);
+}
+
+.logo-texto {
+  font-size: 1.8rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-texto small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--texto-claro);
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--amarillo-sol);
+}
+
+.badge-shop {
+  background-color: var(--fondo-gris-oscuro);
+  color: var(--amarillo-sol);
+  border: 1px dashed var(--amarillo-sol);
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--amarillo-sol);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* HERO / PORTADA */
+.hero {
+  background: linear-gradient(135deg, var(--rojo-oscuro) 0%, var(--rojo-murga) 55%, var(--naranja-fuego) 100%);
+  color: var(--texto-claro);
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Cuando tengas una foto grupal de portada, podés activarla así:
+  background-image: url('../img/portada-murga.jpg');
+  background-size: cover;
+  background-position: center;
+  */
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.etiqueta-barrio {
+  display: inline-block;
+  background-color: var(--fondo-oscuro);
+  color: var(--amarillo-sol);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+}
+
+.hero-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--borde-radio);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s, background-color 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primario {
+  background-color: var(--amarillo-sol);
+  color: var(--fondo-oscuro);
+}
+
+.btn-primario:hover {
+  background-color: #ffd166;
+}
+
+.btn-secundario {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+  border: 2px solid var(--amarillo-sol);
+}
+
+.btn-oscuro {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+}
+
+.btn-sm {
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* SECCIONES GENERALES */
+.seccion {
+  padding: 4.5rem 0;
+}
+
+.seccion-clara {
+  background-color: var(--fondo-claro);
+}
+
+.seccion-destacada {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+}
+
+.titulo-seccion {
+  font-size: 2.8rem;
+  text-align: center;
+  color: var(--rojo-murga);
+  margin-bottom: 0.3rem;
+}
+
+.seccion-destacada .titulo-seccion {
+  color: var(--amarillo-sol);
+}
+
+.subtitulo-seccion {
+  text-align: center;
+  color: var(--texto-gris);
+  max-width: 620px;
+  margin: 0 auto 3rem auto;
+}
+
+.seccion-destacada .subtitulo-seccion {
+  color: #cccccc;
+}
+
+/* LÍNEA DE TIEMPO (HISTORIA) */
+.timeline {
+  border-left: 4px solid var(--naranja-fuego);
+  padding-left: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.65rem;
+  top: 0.3rem;
+  width: 16px;
+  height: 16px;
+  background-color: var(--rojo-murga);
+  border: 3px solid var(--amarillo-sol);
+  border-radius: 50%;
+}
+
+.timeline-fecha {
+  display: inline-block;
+  background-color: var(--rojo-murga);
+  color: var(--texto-claro);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-contenido h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+/* LA OLLA ENDIABLADA */
+.olla-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.olla-info h3 {
+  font-size: 1.8rem;
+  color: var(--naranja-fuego);
+  margin-bottom: 1rem;
+}
+
+.lista-necesidades {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.olla-colaborar {
+  background-color: var(--fondo-gris-oscuro);
+  padding: 2rem;
+  border-radius: var(--borde-radio);
+  border-top: 5px solid var(--amarillo-sol);
+}
+
+.olla-colaborar h3 {
+  font-size: 1.8rem;
+  color: var(--amarillo-sol);
+  margin-bottom: 0.6rem;
+}
+
+.datos-transferencia {
+  background-color: var(--fondo-oscuro);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.2rem 0;
+  border-left: 4px solid var(--rojo-murga);
+}
+
+.datos-transferencia code {
+  color: var(--amarillo-sol);
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+/* GRILLA DE TARJETAS (SALIDAS Y VECINOS) */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.8rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header-tag {
+  background: linear-gradient(90deg, var(--rojo-murga), var(--naranja-fuego));
+  color: var(--texto-claro);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  padding: 0.45rem 1.2rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--texto-oscuro);
+}
+
+.fecha-nota {
+  font-size: 0.82rem;
+  color: var(--naranja-fuego);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.card-links {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-link {
+  color: var(--rojo-murga);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-link-secundario {
+  color: var(--texto-gris);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* FILTROS DE VECINOS */
+.filtros-vecinos {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filtro-btn {
+  padding: 0.5rem 1.1rem;
+  border: 2px solid var(--rojo-murga);
+  background-color: transparent;
+  color: var(--rojo-murga);
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtro-btn.activo, .filtro-btn:hover {
+  background-color: var(--rojo-murga);
+  color: var(--texto-claro);
+}
+
+.tag-rubro {
+  display: inline-block;
+  background-color: var(--amarillo-sol);
+  color: var(--fondo-oscuro);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+.card-vecino p {
+  margin-bottom: 1.2rem;
+  font-size: 0.92rem;
+}
+
+.caja-sumate {
+  margin-top: 3rem;
+  background-color: #ffffff;
+  border: 2px dashed var(--naranja-fuego);
+  padding: 1.8rem;
+  border-radius: var(--borde-radio);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-claro);
+  padding-top: 3rem;
+  border-top: 4px solid var(--rojo-murga);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer h4 {
+  font-size: 1.6rem;
+  color: var(--amarillo-sol);
+}
+
+.footer-redes {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-redes a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-redes a:hover {
+  color: var(--naranja-fuego);
+}
+
+.footer-copy {
+  background-color: #0e0e11;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #999999;
+}
+
+/* RESPONSIVE CELULARES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--fondo-oscuro);
+    padding: 1.5rem;
+    border-bottom: 3px solid var(--amarillo-sol);
+  }
+
+  .nav.activo {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .olla-grid {
+    grid-template-columns: 1fr;
+  }
+}

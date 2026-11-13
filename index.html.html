@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Endiablados de Villa Ortúzar | Murga Porteña</title>
+  <!-- Fuentes de Google Fonts con personalidad carnavalera y buena lectura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <!-- Reemplazar src por el escudo real de la murga -->
+        <span class="logo-texto">LOS ENDIABLADOS <small>DE VILLA ORTÚZAR</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Nuestra Historia</a></li>
+          <li><a href="#olla">La Olla Endiablada</a></li>
+          <li><a href="#salidas">Salidas y Videos</a></li>
+          <li><a href="#vecinos">Emprendimientos</a></li>
+          <!-- Dejado listo para activar cuando armen la tienda -->
+          <li><span class="badge-shop" title="Próximamente">Shop (Pronto)</span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA / HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <span class="etiqueta-barrio">Carnaval Porteño • Barrio de Villa Ortúzar</span>
+        <h1>ALEGRÍA, BOMBO, PLATILLO Y CORAZÓN BARRIAL</h1>
+        <p>Más de una década llevando el rojo, amarillo y naranja a cada esquina, construyendo cultura popular y solidaridad junto a nuestros vecinos.</p>
+        <div class="hero-botones">
+          <a href="#salidas" class="btn btn-primario">Ver Próximas Salidas</a>
+          <a href="#olla" class="btn btn-secundario">Colaborar con la Olla</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTRA HISTORIA (Línea de tiempo) -->
+  <section id="historia" class="seccion">
+    <div class="container">
+      <h2 class="titulo-seccion">Nuestra Historia</h2>
+      <p class="subtitulo-seccion">Desde los primeros ensayos en el barrio hasta las noches de corso.</p>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-fecha">Los Inicios</div>
+          <div class="timeline-contenido">
+            <h3>El nacimiento en Villa Ortúzar</h3>
+            <p>Cómo nos juntamos en el barrio con el sueño de armar una murga propia que represente nuestra identidad y las ganas de festejar el carnaval.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-fecha">Crecimiento</div>
+          <div class="timeline-contenido">
+            <h3>Nuestras primeras levitas y glosas</h3>
+            <p>El trabajo artesanal de bordar lentejuelas, afinar la percusión y pisar los primeros tablados de la Ciudad de Buenos Aires.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-fecha">Actualidad</div>
+          <div class="timeline-contenido">
+            <h3>Cultura y compromiso todo el año</h3>
+            <p>Hoy seguimos ensayando, formando nuevos murgueros y sosteniendo actividades culturales y solidarias en Plaza 25 de Agosto y todo Ortúzar.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA OLLA ENDIABLADA -->
+  <section id="olla" class="seccion seccion-destacada">
+    <div class="container">
+      <h2 class="titulo-seccion">La Olla Endiablada</h2>
+      <p class="subtitulo-seccion">Porque el carnaval también es estar presentes cuando el barrio más lo necesita.</p>
+
+      <div class="olla-grid">
+        <div class="olla-info">
+          <h3>¿Cómo funciona nuestra movida solidaria?</h3>
+          <p>Preparamos y repartimos viandas calientes para vecinos y familias en situación de vulnerabilidad. Todo se sostiene a pulmón con el esfuerzo de la murga y las donaciones de la comunidad.</p>
+          
+          <ul class="lista-necesidades">
+            <li><strong>Qué necesitamos hoy:</strong> Arroz, fideos, puré de tomate, lentejas, aceite y bandejas descartables.</li>
+            <li><strong>Punto de recepción:</strong> Plaza 25 de Agosto / Ensayos (consultar horarios).</li>
+          </ul>
+        </div>
+
+        <div class="olla-colaborar card">
+          <h3>Sumá tu aporte</h3>
+          <p>Podés acercar alimentos no perecederos o colaborar con un aporte económico para comprar ingredientes frescos.</p>
+          <div class="datos-transferencia">
+            <p><strong>Alias:</strong> <code>OLLA.ENDIABLADOS.OK</code></p>
+            <p><strong>Titular:</strong> Asociación Civil / Referente</p>
+          </div>
+          <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20colaborar%20con%20La%20Olla%20Endiablada" target="_blank" class="btn btn-primario btn-full">Coordinar donación por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALIDAS, NOTAS Y VIDEOS -->
+  <section id="salidas" class="seccion">
+    <div class="container">
+      <h2 class="titulo-seccion">Salidas, Notas y Videos</h2>
+      <p class="subtitulo-seccion">Crónicas de nuestras presentaciones, entrevistas y registros audiovisuales.</p>
+
+      <div class="grid-cards">
+        <!-- Tarjeta de Salida / Nota 1 -->
+        <article class="card">
+          <div class="card-header-tag">Crónica de Corso</div>
+          <div class="card-body">
+            <h3>Noche a puro brillo en el Corso de Ortúzar</h3>
+            <p class="fecha-nota">Febrero 2026 • Plaza 25 de Agosto</p>
+            <p>Así vivimos nuestra pasada frente a nuestra gente, con más de 80 integrantes en escena, matanza y retirada a puro festejo.</p>
+            <div class="card-links">
+              <a href="https://www.youtube.com" target="_blank" class="btn-link">▶ Ver video en YouTube</a>
+              <a href="#" class="btn-link-secundario">Leer nota completa →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta de Salida / Nota 2 -->
+        <article class="card">
+          <div class="card-header-tag">Aniversario</div>
+          <div class="card-body">
+            <h3>Festejo Popular en el Barrio</h3>
+            <p class="fecha-nota">Próxima fecha a confirmar</p>
+            <p>Celebramos un nuevo año de historia junto a murgas amigas, música en vivo y buffet popular para toda la familia.</p>
+            <div class="card-links">
+              <a href="https://www.instagram.com" target="_blank" class="btn-link">▶ Ver reel en Instagram</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta de Prensa / Video 3 -->
+        <article class="card">
+          <div class="card-header-tag">Prensa y Entrevistas</div>
+          <div class="card-body">
+            <h3>Nota radial sobre el Carnaval Porteño</h3>
+            <p class="fecha-nota">Archivo Histórico</p>
+            <p>Charlamos sobre el rol social de las murgas de barrio y la preparación artesanal de nuestros trajes.</p>
+            <div class="card-links">
+              <a href="https://www.youtube.com" target="_blank" class="btn-link">▶ Escuchar entrevista</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRENDIMIENTOS DE VECINOS -->
+  <section id="vecinos" class="seccion seccion-clara">
+    <div class="container">
+      <h2 class="titulo-seccion">Vidriera de Vecinos</h2>
+      <p class="subtitulo-seccion">Apoyá el trabajo local: emprendimientos, oficios y servicios de Villa Ortúzar.</p>
+
+      <!-- Botones de filtro por rubro -->
+      <div class="filtros-vecinos" id="filtros-vecinos">
+        <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+        <button class="filtro-btn" data-categoria="gastronomia">Gastronomía</button>
+        <button class="filtro-btn" data-categoria="oficios">Oficios y Hogar</button>
+        <button class="filtro-btn" data-categoria="artesanias">Artesanías y Estética</button>
+      </div>
+
+      <div class="grid-cards" id="lista-emprendimientos">
+        <!-- Emprendimiento 1 -->
+        <article class="card card-vecino" data-categoria="oficios">
+          <div class="card-body">
+            <span class="tag-rubro">Oficios y Hogar</span>
+            <h3>Instalaciones Eléctricas</h3>
+            <p>Trabajos domiciliarios y comerciales en Villa Ortúzar y CABA. Tableros, urgencias y mantenimiento.</p>
+            <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-oscuro btn-sm">Contactar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- Emprendimiento 2 -->
+        <article class="card card-vecino" data-categoria="artesanias">
+          <div class="card-body">
+            <span class="tag-rubro">Artesanías y Estética</span>
+            <h3>Bordados y Accesorios Carnavaleros</h3>
+            <p>Apliques bordados a mano en lentejuelas, mostacillas y flores kanzashi personalizadas para trajes y ropa.</p>
+            <a href="https://www.instagram.com" target="_blank" class="btn btn-oscuro btn-sm">Ver Instagram</a>
+          </div>
+        </article>
+
+        <!-- Emprendimiento 3 -->
+        <article class="card card-vecino" data-categoria="gastronomia">
+          <div class="card-body">
+            <span class="tag-rubro">Gastronomía</span>
+            <h3>Panadería y Pastelería Casera</h3>
+            <p>Pedidos por encargue para eventos, cumpleaños y mesas dulces en el barrio.</p>
+            <a href="https://www.instagram.com" target="_blank" class="btn btn-oscuro btn-sm">Ver catálogo</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Llamado para que más vecinos sumen su emprendimiento -->
+      <div class="caja-sumate">
+        <p>¿Sos vecino/a de Ortúzar y tenés un emprendimiento u oficio? <strong>¡Publicá gratis en nuestra vidriera!</strong></p>
+        <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20sumar%20mi%20emprendimiento%20a%20la%20web%20de%20Los%20Endiablados" target="_blank" class="btn btn-primario">Sumar mi emprendimiento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h4>LOS ENDIABLADOS DE VILLA ORTÚZAR</h4>
+        <p>Murga de Carnaval Porteño • Ciudad Autónoma de Buenos Aires.</p>
+      </div>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Los Endiablados de Villa Ortúzar. Hecho con pasión carnavalera.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
