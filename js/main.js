@@ -38,4 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+  // 3. Carrusel automático en la portada
+  const slides = document.querySelectorAll('.hero-slider .slide');
+  if (slides.length > 1) {
+    let indiceActual = 0;
+    setInterval(() => {
+      slides[indiceActual].classList.remove('activa');
+      indiceActual = (indiceActual + 1) % slides.length;
+      slides[indiceActual].classList.add('activa');
+    }, 5000);
+  }
 });
