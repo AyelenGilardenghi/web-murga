@@ -374,6 +374,24 @@ h1, h2, h3, .logo-texto {
   font-weight: bold;
 }
 
+.olla-colaborar,
+.olla-colaborar p,
+.olla-colaborar h4,
+.intro-colaborar,
+.texto-chico,
+.bloque-aporte h4 {
+  color: var(--texto-oscuro);
+}
+
+.datos-transferencia,
+.datos-transferencia p {
+  color: var(--texto-claro);
+}
+
+.datos-transferencia h4 {
+  color: var(--amarillo-sol);
+}
+
 /* GRILLA DE TARJETAS (SALIDAS Y VECINOS) */
 .grid-cards {
   display: grid;
