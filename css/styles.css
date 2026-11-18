@@ -130,20 +130,41 @@ h1, h2, h3, .logo-texto {
 
 /* HERO / PORTADA */
 .hero {
-  background: linear-gradient(135deg, var(--rojo-oscuro) 0%, var(--rojo-murga) 55%, var(--naranja-fuego) 100%);
+  position: relative;
+  overflow: hidden;
   color: var(--texto-claro);
   min-height: 75vh;
   display: flex;
   align-items: center;
   text-align: center;
-  /* Cuando tengas una foto grupal de portada, podés activarla así:
-  background-image: url('../img/portada-murga.jpg');
+}
+
+.hero-slider, .hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  */
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide.activa {
+  opacity: 1;
 }
 
 .hero-overlay {
+  background: linear-gradient(rgba(20, 20, 24, 0.65), rgba(155, 0, 28, 0.72));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
   width: 100%;
   padding: 4rem 0;
 }
