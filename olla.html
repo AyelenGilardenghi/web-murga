@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Olla Endiablada | Los Endiablados de Villa Ortúzar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Escudo Los Endiablados de Villa Ortúzar" class="logo-img">
+        <span class="logo-texto">LOS ENDIABLADOS <small>VILLA ORTÚZAR</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html">← Volver al inicio</a></li>
+          <li><a href="index.html#historia">Historia</a></li>
+          <li><a href="#sumate">Cómo colaborar</a></li>
+          <li><a href="index.html#vecinos">Vecinos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA INTERNA -->
+  <section class="seccion-destacada" style="padding: 4rem 0; text-align: center; border-bottom: 4px solid var(--naranja-fuego);">
+    <div class="container">
+      <span class="etiqueta-barrio">Solidaridad en Villa Ortúzar</span>
+      <h1 style="font-size: clamp(2.8rem, 5vw, 4.2rem); color: var(--amarillo-sol); margin-bottom: 0.8rem;">La Olla Endiablada</h1>
+      <p style="max-width: 680px; margin: 0 auto 1.8rem auto; font-size: 1.05rem;">
+        Porque la murga no es solo febrero: todos los miércoles nos organizamos a pulmón en el barrio para cocinar y compartir un plato caliente con quienes más lo necesitan.
+      </p>
+      <div class="hero-botones">
+        <a href="#sumate" class="btn btn-primario">Quiero colaborar</a>
+        <a href="https://www.instagram.com/TU_USUARIO_DE_LA_OLLA/" target="_blank" rel="noopener" class="btn btn-secundario">
+          📸 Ver fotos y jornadas en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO TRABAJAMOS -->
+  <section class="seccion seccion-clara">
+    <div class="container">
+      <h2 class="titulo-seccion">¿Cómo nos organizamos?</h2>
+      <p class="subtitulo-seccion">Un trabajo colectivo sostenido por murgueros, vecinos y comercios amigos de Villa Ortúzar.</p>
+
+      <div class="grid-cards">
+        <div class="card">
+          <div class="card-header-tag">Paso 1 • Acopio</div>
+          <div class="card-body">
+            <h3>Reunimos los ingredientes</h3>
+            <p>Con las suscripciones mensuales, las transferencias y las donaciones de alimentos secos y verduras frescas que acercan los vecinos, armamos el menú de cada semana.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header-tag">Paso 2 • Cocina</div>
+          <div class="card-body">
+            <h3>Cocinamos a pulmón</h3>
+            <p>Nos juntamos a preparar cada olla con dedicación, cuidando la higiene, la calidad y que cada porción sea abundante y nutritiva.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header-tag">Paso 3 • Entrega</div>
+          <div class="card-body">
+            <h3>Compartimos en el barrio</h3>
+            <p>Repartimos las viandas calientes a vecinos y familias de la zona en un espacio de encuentro, respeto y acompañamiento mutuo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE COLABORACIÓN Y TRANSPARENCIA -->
+  <section id="sumate" class="seccion seccion-destacada">
+    <div class="container">
+      <h2 class="titulo-seccion">Sumá tu aporte</h2>
+      <p class="subtitulo-seccion">Todo lo recaudado se destina íntegramente a la compra de alimentos, descartables y garrafas.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
+        
+        <!-- COLUMNA QUÉ NECESITAMOS Y PUNTO DE ENTREGA -->
+        <div class="olla-info">
+          <h3>Donación de alimentos e insumos</h3>
+          <p>Si preferís acercar mercadería en lugar de dinero, lo que más usamos cada semana es:</p>
+          <ul class="lista-necesidades">
+            <li><strong>Alimentos secos:</strong> Arroz, fideos guiseros, lentejas, polenta, puré de tomate y aceite.</li>
+            <li><strong>Frescos:</strong> Papa, cebolla, zanahoria, zapallo y carne o pollo.</li>
+            <li><strong>Insumos:</strong> Bandejas descartables, rollos de cocina y bolsas.</li>
+            <li><strong>Dónde entregar:</strong> En Plaza 25 de Agosto durante nuestros ensayos o coordinando por mensaje en el Instagram de La Olla.</li>
+          </ul>
+
+          <div style="margin-top: 2rem; padding: 1.2rem; background-color: var(--fondo-gris-oscuro); border-radius: 10px; border-left: 4px solid var(--amarillo-sol);">
+            <h4 style="color: var(--amarillo-sol); margin-bottom: 0.4rem;">📸 Transparencia semana a semana</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 1rem;">En nuestro Instagram subimos cada jornada, las compras que realizamos con sus aportes y las entregas en el barrio.</p>
+            <a href="https://www.instagram.com/olla.endiablada/" target="_blank" rel="noopener" class="btn btn-primario btn-sm">Ir al Instagram de La Olla</a>
+          </div>
+        </div>
+
+        <!-- TARJETA BLANCA DE APORTES (MISMA DE LA PORTADA) -->
+        <div class="olla-colaborar card">
+          <h3>¿Cómo podés colaborar?</h3>
+          <p>Elegí si querés sumarte con una suscripción mensual o hacer un aporte mediante transferencia.</p>
+
+          <div class="bloque-aporte">
+            <h4>❤️🧡💛 Suscripción Mensual</h4>
+            <p class="texto-chico">Tu aporte fijo todos los meses nos permite planificar la compra de alimentos frescos.</p>
+            <div class="botones-suscripcion">
+              <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808497c19ac40197c2ccf2440081&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener" class="btn btn-primario">$3.000 / mes</a>
+              <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808497b74ff10197c2cd6a740403&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener" class="btn btn-primario">$5.000 / mes</a>
+              <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808497b74ff10197c2cdd6240404&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener" class="btn btn-primario">$10.000 / mes</a>
+            </div>
+          </div>
+
+          <h4 style="margin-top: 1.2rem; margin-bottom: 0.4rem;">🏦 Aporte mediante transferencia</h4>
+          <div class="datos-transferencia" style="margin-top: 0;">
+            <p><strong>Alias:</strong> <code id="alias-olla">ALIAS.DE.LA.MURGA</code></p>
+            <p><strong>CBU:</strong> <code>0000000000000000000000</code></p>
+          </div>
+
+          <a href="https://www.instagram.com/olla.endiablada/" target="_blank" rel="noopener" class="btn btn-oscuro btn-full">
+            Enviar comprobante / Coordinar donación
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h4>Centro Murga Los Endiablados de Villa Ortúzar</h4>
+        <p>Barrio de Villa Ortúzar, CABA • Desde 1997</p>
+      </div>
+      <div class="footer-redes">
+        <a href="index.html">Inicio</a>
+        <a href="https://www.instagram.com/olla.endiablada/" target="_blank" rel="noopener">Instagram La Olla</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Los Endiablados de Villa Ortúzar • Rojo, Amarillo y Naranja</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
