@@ -455,6 +455,7 @@ h1, h2, h3, .logo-texto {
 
 .card-body {
   padding: 1.5rem;
+  flex: 1;
 }
 
 .card-body h3 {
