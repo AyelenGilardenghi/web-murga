@@ -48,4 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
       slides[indiceActual].classList.add('activa');
     }, 5000);
   }
+
+  // 4. Reproducir video de La Olla automáticamente al llegar a la sección
+  const videoOlla = document.getElementById('video-olla');
+  if (videoOlla) {
+    const observadorVideo = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          videoOlla.play().catch(() => {});
+        } else {
+          videoOlla.pause();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observadorVideo.observe(videoOlla);
+  }
 });
